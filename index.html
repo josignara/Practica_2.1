@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Formularios</h1>
+    </header>
+    <main>
+        <section>
+            <table>
+                <tbody>
+                    <!-- primera fila -->
+                    <tr>
+                        <td>
+                            <p>Tratamiento: *
+                                <br>                    
+                                    <input type="radio" name="hm" value="h"> Sr.
+                                    <input type="radio" name="hm" value="m"> Sra.
+                            </p>
+                        </td>
+                        <td>
+                            <p>Nombre:* 
+                                <br>
+                                    <input type="text" name="nombre"></p>
+                        </td>
+                        <td>
+                            <p>Apellido 1:* 
+                                <br>
+                                    <input type="text" name="apellido1"></p>
+                        </td>
+                        <td>
+                            <p>Apellido 2: 
+                                <br>
+                                    <input type="text" name="apellido2"></p>
+                        </td>
+                    </tr>
+                    <!-- segunda fila -->
+                    <tr>
+                        <td>      
+                            <p> Tipo Doc: *
+                                <br>
+                                    <select name="DocType">
+                                        <option>DNI</option>
+                                        <option>CIF</option>
+                                        <option>Otros..</option>
+                                    </select>
+                            </p>
+                        </td>
+                        <td>
+                            <p>Nº Doc: * 
+                                <br>
+                                    <input type="text" name="NumDoc"></p>
+                        </td>
+                        <td>
+                            <p>Fecha de nacimiento: 
+                                <br>
+                                    <input type="date" name="FNac"></p>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <!-- Tercera fila -->
+                    <tr>
+                        <td>
+                            <p> País de nacimiento: *
+                                <br>
+                                    <select name="PNac">
+                                        <option>ESPAÑA</option>
+                                        <option>CHILE</option>
+                                        <option>COLOMBIA</option>
+                                        <option>VENEZUELA</option>
+                                    </select>
+                            </p>
+                        </td>
+                        <td>
+                            <p> Nacionalidad: *
+                                <br>
+                                    <select name="Org">
+                                        <option>Española</option>
+                                        <option>Colombiana</option>
+                                        <option>Rusa</option>
+                                        <option>Portuguesa</option>
+                                    </select>
+                            </p>
+                        </td>
+                        <td>
+                            <p> Segunda Nacionalidad: 
+                                <br>
+                                    <select name="Org2">
+                                        <option>Española</option>
+                                        <option>Colombiana</option>
+                                        <option>Chilena</option>
+                                        <option>Italiana</option>
+                                    </select>
+                            </p>
+                        </td>
+                        <td>
+                            <p> País de residencia fiscal: *
+                                <br>
+                                    <select name="Org">
+                                        <option>España</option>
+                                        <option>Uruguay</option>
+                                        <option>Albacete</option>
+                                        <option>Bétera</option>
+                                    </select>
+                            </p>
+                        </td>
+                    </tr>
+                    <!-- cuarta fila -->
+                    <tr>
+                        <td>
+                            <p> Trabajo: *
+                                <br>
+                                    <select name="Trb">
+                                        <option>Panadero</option>
+                                        <option>Profesor</option>
+                                        <option>Reportero</option>
+                                        <option>Zapatero</option>
+                                    </select>
+                            </p>
+                        </td>
+                        <td>
+                            <p> Tipo de actividad: *
+                                <br>
+                                    <select name="Act">
+                                        <option>Tareas hogar</option>
+                                        <option>Estudiante</option>
+                                        <option>Desempleado</option>
+                                        <option>Jubilado</option>
+                                        <option>Pensionista</option>
+                                    </select>
+                            </p>
+                        </td>
+                        <td>
+                            <p> Sector profesional: *
+                                <br>
+                                    <select name="SP">
+                                        <option>No trabaja</option>
+                                        <option>Banca</option>
+                                        <option>Construcción</option>
+                                        <option>Energía</option>
+                                        <option value="">Industria</option>
+                                        <option value="">Recursos humanos</option>
+                                        <option value="">Servicios</option>
+                                    </select>
+                                </p>
+                        </td>
+                        <td>
+                            <p> Empresa: *
+                                <br>
+                                    <input type="text" name="Empresa">
+                            </p>
+                        </td>
+                    </tr>
+                    <!-- Quinta fila -->
+                    <tr>
+                        <td>
+                            <p>Propósito de la cuenta:* 
+                                <br>
+                                    <Select name="PC">
+                                        <option value="">Ahorro</option>
+                                        <option value="">Inversión</option>
+                                        <option value="">Otros</option>
+                                    </Select>
+                            </p>
+                        </td>
+                        <td>
+                            <p>Origen de sus ahorros:* 
+                                <br>
+                                    <select name="OAh">
+                                        <option>Nómina o pensión</option>
+                                        <option>Herencia</option>
+                                        <option>Lotería o sorteos</option>
+                                        <option>Robo</option>
+                                        <option>Mercado negro</option>
+                                    </select>
+                            </p>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>        
+        </section>
+        <section>
+            <table class="gris">
+                <!-- Primera fila gris -->
+                <tr>
+                    <td>
+                        <p>
+                            Tipo de vía* 
+                            <br>
+                                <select name="via">
+                                    <option>Calle</option>
+                                    <option>Avenida</option>
+                                    <option>Plaza</option>
+                                    <option>Carretera</option>
+                                </select>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Dirección* 
+                            <br>
+                                <input type="text" name="Dir">
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Número* 
+                            <br>
+                                <input type="number" name="NumD">
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Piso 
+                            <br>
+                                <input type="number" name="PisoN">
+                            </p>
+                       </td>    
+                </tr>
+                <!-- Segunda fila gris -->
+                <tr>
+                    <td>
+                        <p>
+                            Urb./Pol./Otros 
+                                <input type="text" name="UPO">
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Localidad*
+                                <input type="Loc">
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Provincia* 
+                                <select name="Provincia">
+                                    <option>Alicante</option>
+                                    <option>Ávila</option>
+                                    <option>Castellón</option>
+                                    <option>Madrid</option>
+                                    <option>Valencia</option>
+                                </select>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Código Postal*
+                            <br>
+                                 <input type="number" name="CP">
+                        </p>
+                    </td>
+                </tr>
+                <!-- Tercera fila gris -->
+                <tr>
+                    <td>
+                        <p>
+                            Teléfono Móvil:*
+                            <br>    
+                                <input type="number" name="TelM"> 
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Teléfono Particular:
+                            <br>
+                                <input type="number" name="TelF">
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Dirección de e-mail:
+                            <br>
+                                <input type="text" name="email">
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <br>
+        <hr>
+        <br>
+        <section>
+            <header class="Nomina">
+                <h2>Abrir Cuenta NOMINA</h2>
+                <br>
+                <p class="img">
+                <img src="img/INGNomina.JPG" alt="Abra su cuenta NOMINA en 5 minutos">
+                </p>
+                <br>
+            </header>
+            <table>
+                <tr>
+                    <td>
+                        <p>
+                            E-mail <span class="as">*</span>
+                            <br>
+                            <input type="text" name="mail2">
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            DNI o Tarjeta de residencia:
+                            <br>
+                            <input type="text" name="DNI2">
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Fecha de Nacimiento <span class="as">*</span>
+                            <br>
+                            <input type="date" name="FNac2">
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><span class="as">*</span> Campos obligatorios</p>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        Tarea 2.1
+        <br>
+        Nombre: José Ignacio Arán
+        <br>
+        1ro ASIR 6M
+        <br>
+         06/12/2019
+        <hr>
+    </footer>
+</body>
+</html>
