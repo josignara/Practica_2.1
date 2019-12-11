@@ -18,21 +18,21 @@
                     <!-- primera fila -->
                     <tr>
                         <td>
-                            <p>Tratamiento: *
+                            <p>Tratamiento: <span class="as">*</span>
                                 <br>                    
                                     <input type="radio" name="hm" value="h"> Sr.
                                     <input type="radio" name="hm" value="m"> Sra.
                             </p>
                         </td>
                         <td>
-                            <p>Nombre:* 
+                            <p>Nombre: <span class="as">*</span> 
                                 <br>
-                                    <input type="text" name="nombre"></p>
+                                    <input type="text" name="nombre" required></p>
                         </td>
                         <td>
-                            <p>Apellido 1:* 
+                            <p>Apellido 1: <span class="as">*</span> 
                                 <br>
-                                    <input type="text" name="apellido1"></p>
+                                    <input type="text" name="apellido1" required></p>
                         </td>
                         <td>
                             <p>Apellido 2: 
@@ -43,9 +43,9 @@
                     <!-- segunda fila -->
                     <tr>
                         <td>      
-                            <p> Tipo Doc: *
+                            <p> Tipo Doc: <span class="as">*</span>
                                 <br>
-                                    <select name="DocType">
+                                    <select name="DocType" required>
                                         <option>DNI</option>
                                         <option>CIF</option>
                                         <option>Otros..</option>
@@ -53,14 +53,14 @@
                             </p>
                         </td>
                         <td>
-                            <p>Nº Doc: * 
+                            <p>Nº Doc: <span class="as">*</span> 
                                 <br>
-                                    <input type="text" name="NumDoc"></p>
+                                    <input type="text" name="NumDoc" required></p>
                         </td>
                         <td>
-                            <p>Fecha de nacimiento: 
+                            <p>Fecha de nacimiento: <span class="as">*</span> 
                                 <br>
-                                    <input type="date" name="FNac"></p>
+                                    <input type="date" name="FNac" required></p>
                         </td>
                         <td>
                         </td>
@@ -68,9 +68,9 @@
                     <!-- Tercera fila -->
                     <tr>
                         <td>
-                            <p> País de nacimiento: *
+                            <p> País de nacimiento: <span class="as">*</span>
                                 <br>
-                                    <select name="PNac">
+                                    <select name="PNac" required>
                                         <option>ESPAÑA</option>
                                         <option>CHILE</option>
                                         <option>COLOMBIA</option>
@@ -79,9 +79,9 @@
                             </p>
                         </td>
                         <td>
-                            <p> Nacionalidad: *
+                            <p> Nacionalidad: <span class="as">*</span>
                                 <br>
-                                    <select name="Org">
+                                    <select name="Org" required>
                                         <option>Española</option>
                                         <option>Colombiana</option>
                                         <option>Rusa</option>
@@ -101,9 +101,9 @@
                             </p>
                         </td>
                         <td>
-                            <p> País de residencia fiscal: *
+                            <p> País de residencia fiscal: <span class="as">*</span>
                                 <br>
-                                    <select name="Org">
+                                    <select name="Org" required>
                                         <option>España</option>
                                         <option>Uruguay</option>
                                         <option>Albacete</option>
@@ -115,9 +115,9 @@
                     <!-- cuarta fila -->
                     <tr>
                         <td>
-                            <p> Trabajo: *
+                            <p> Trabajo: <span class="as">*</span>
                                 <br>
-                                    <select name="Trb">
+                                    <select name="Trb" required>
                                         <option>Panadero</option>
                                         <option>Profesor</option>
                                         <option>Reportero</option>
@@ -126,9 +126,9 @@
                             </p>
                         </td>
                         <td>
-                            <p> Tipo de actividad: *
+                            <p> Tipo de actividad: <span class="as">*</span>
                                 <br>
-                                    <select name="Act">
+                                    <select name="Act" required>
                                         <option>Tareas hogar</option>
                                         <option>Estudiante</option>
                                         <option>Desempleado</option>
@@ -138,9 +138,9 @@
                             </p>
                         </td>
                         <td>
-                            <p> Sector profesional: *
+                            <p> Sector profesional: <span class="as">*</span>
                                 <br>
-                                    <select name="SP">
+                                    <select name="SP" required>
                                         <option>No trabaja</option>
                                         <option>Banca</option>
                                         <option>Construcción</option>
@@ -152,18 +152,18 @@
                                 </p>
                         </td>
                         <td>
-                            <p> Empresa: *
+                            <p> Empresa: <span class="as">*</span>
                                 <br>
-                                    <input type="text" name="Empresa">
+                                    <input type="text" name="Empresa" required>
                             </p>
                         </td>
                     </tr>
                     <!-- Quinta fila -->
                     <tr>
                         <td>
-                            <p>Propósito de la cuenta:* 
+                            <p>Propósito de la cuenta: <span class="as">*</span> 
                                 <br>
-                                    <Select name="PC">
+                                    <Select name="PC" required>
                                         <option value="">Ahorro</option>
                                         <option value="">Inversión</option>
                                         <option value="">Otros</option>
@@ -171,9 +171,9 @@
                             </p>
                         </td>
                         <td>
-                            <p>Origen de sus ahorros:* 
+                            <p>Origen de sus ahorros: <span class="as">*</span> 
                                 <br>
-                                    <select name="OAh">
+                                    <select name="OAh" required>
                                         <option>Nómina o pensión</option>
                                         <option>Herencia</option>
                                         <option>Lotería o sorteos</option>
@@ -195,9 +195,9 @@
                 <tr>
                     <td>
                         <p>
-                            Tipo de vía* 
+                            Tipo de vía <span class="as">*</span>
                             <br>
-                                <select name="via">
+                                <select name="via" required>
                                     <option>Calle</option>
                                     <option>Avenida</option>
                                     <option>Plaza</option>
@@ -207,16 +207,16 @@
                     </td>
                     <td>
                         <p>
-                            Dirección* 
+                            Dirección <span class="as">*</span> 
                             <br>
-                                <input type="text" name="Dir">
+                                <input type="text" name="Dir" required>
                         </p>
                     </td>
                     <td>
                         <p>
-                            Número* 
+                            Número <span class="as">*</span> 
                             <br>
-                                <input type="number" name="NumD">
+                                <input type="number" name="NumD" required>
                         </p>
                     </td>
                     <td>
@@ -237,14 +237,14 @@
                     </td>
                     <td>
                         <p>
-                            Localidad*
-                                <input type="Loc">
+                            Localidad <span class="as">*</span>
+                                <input type="Loc" required>
                         </p>
                     </td>
                     <td>
                         <p>
-                            Provincia* 
-                                <select name="Provincia">
+                            Provincia <span class="as">*</span> 
+                                <select name="Provincia" required>
                                     <option>Alicante</option>
                                     <option>Ávila</option>
                                     <option>Castellón</option>
@@ -255,9 +255,9 @@
                     </td>
                     <td>
                         <p>
-                            Código Postal*
+                            Código Postal <span class="as">*</span>
                             <br>
-                                 <input type="number" name="CP">
+                                 <input type="number" name="CP" required>
                         </p>
                     </td>
                 </tr>
@@ -265,9 +265,9 @@
                 <tr>
                     <td>
                         <p>
-                            Teléfono Móvil:*
+                            Teléfono Móvil: <span class="as">*</span>
                             <br>    
-                                <input type="number" name="TelM"> 
+                                <input type="number" name="TelM" required> 
                         </p>
                     </td>
                     <td>
@@ -283,6 +283,55 @@
                             <br>
                                 <input type="text" name="email">
                         </p>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                                <td>
+Para ofrecerle un mejor servicio nos sería útil conocer si posee en otra entidad:
+<br>
+<input type="checkbox" name="Plan de pensiones" id="PP">Plan de pensiones
+<input type="checkbox" name="Fondos" id="Fs"> Fondos
+<input type="checkbox" name="Acciones" id="AC">Acciones
+<input type="checkbox" name="Hipoteca" id="Hp">Hipoteca
+<input type="checkbox" name="Prestamo" id="Ps">Préstamo
+<input type="checkbox" name="SeguroVida" id="SV">Seguro de vida
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+
+<textarea name="Condiciones" rows="4" cols="70"> Información básica sobre protección de datos de ING BANK NV, Sucursal en España.
+
+        ¿Quién es el Responsable del tratamiento de sus datos personales? ING BANK NV, Sucursal en España (ING) con domicilio en C/ Severo Ochoa 2, 28232 Las Rozas (Madrid). Disponemos de un Delegado de Protección de Datos cuya dirección es dpo@ing.es.
+        
+        ¿Cómo obtenemos sus datos personales? Los habrá facilitado usted o habremos accedido a ellos a raíz de sus consultas, solicitudes o contrataciones de productos, operaciones o transacciones que haya realizado con nosotros, su navegación por sitios Web, propios o de terceros, o que hayamos obtenido del uso de dispositivos móviles de telecomunicaciones, TPV´s, cajeros automáticos u otros canales legítimos. También pueden haber sido cedidos legítimamente por terceros si usted nos ha autorizado en el ámbito de la contratación de un producto o prestación de un servicio. Le informamos de que ING BANK utilizará sus números de teléfono móvil y su correo electrónico para informarle, puntualmente, sobre cualquier aspecto relacionado con sus cuentas así como de que la información relativa a sus productos le será remitida por Internet a través de correspondencia web, pudiendo, no obstante, revocar esta opción en cualquier momento. En caso de que facilite los datos de un segundo interviniente en la contratación de un producto trataremos los mismos de la forma indicada en esta información. En caso de que no formalice su alta como interviniente en el producto en un plazo máximo de 3 meses, sus datos serán eliminados.
+        
+        ¿Para qué tratamos sus datos personales? Tratamos sus datos con el fin de gestionar y prestar el servicio que haya solicitado o contratado, y asegurarnos de que le ofrecemos los mejores productos y servicios financieros, según sus necesidades, llevando a cabo análisis y /o estudios que nos permiten mejorar la calidad de nuestros servicios y comunicarle nuestras ofertas. En relación con nuestros productos de crédito, tratamos sus datos de solvencia económica para cumplir con la obligación legal de analizar su capacidad de pago, y también porque queremos ofrecerle productos adecuados a su perfil. En otros casos será necesario tratar sus datos para cumplir con obligaciones exigidas por la legislación aplicable. Si necesitamos obtener su consentimiento para efectuar algún tratamiento de datos, le informaremos de ello en el momento en que sea necesario obtenerlo, pudiendo denegarlo entonces, o revocarlo en cualquier momento de acuerdo con la legislación aplicable en esta materia.
+        
+        ¿En qué nos basamos para tratar sus datos?
+        
+            En el cumplimiento de las obligaciones contractuales que hayamos asumido con usted en la prestación de servicios o gestión de sus productos.
+            En el cumplimiento de obligaciones legales en materia de evaluación de solvencia de los solicitantes de productos con riesgo de crédito, fiscales, contables, prevención de fraude y blanqueo de capitales, seguridad social u otras impuestas por organismos de supervisión o autoridades de control.
+            En la satisfacción de nuestro interés legítimo para llevar a cabo encuestas, modelos estadísticos de valoración y/o de riesgo, o estudios de mercado que pueden ser de su interés, y mejorar, si procede, los productos que ya haya contratado así como para el propio conocimiento "know-how" que permite a ING ofrecer a sus clientes servicios de valor añadido.
+            En su consentimiento expreso en los casos en que sea preciso.
+        
+        ¿Quiénes son los destinatarios de sus datos? ING puede comunicar sus datos a entidades del grupo ING, a organismos públicos en cumplimiento de obligaciones legales, a ficheros de solvencia económica y de cumplimiento o incumplimiento de obligaciones dinerarias de acceso público o de otra tipología a la que nos encontremos adheridos cuando sea necesario para la prestación del servicio o contratación que haya solicitado, y a otras entidades ajenas a ING que tratarán sus datos por cuenta de ING como parte de la prestación de servicios que les hemos contratado.
+        
+        ¿Cuáles son sus derechos? Usted tiene derecho de acceso a sus datos, rectificación, supresión y portabilidad, así como el derecho a la limitación u oposición al tratamiento de sus datos, y a retirar el consentimiento prestado, en cualquier momento, como se explica en la información contenida aquí. También tiene derecho a presentar una reclamación ante la Autoridad de Control competente si entiende que el tratamiento de datos de ING no se ajusta a la legislación vigente.
+        
+        Puede consultar más información y detalle sobre Protección de Datos en ING aquí. </textarea>
+
+
+                    </td>
+                    <td>
+                <button type="button">
+    <img src="img/continuar.jpg" alt="continuar" width="94" height="32">
+  </button>
+  
+  
                     </td>
                 </tr>
             </table>
@@ -305,7 +354,7 @@
                         <p>
                             E-mail <span class="as">*</span>
                             <br>
-                            <input type="text" name="mail2">
+                            <input type="text" name="mail2" required>
                         </p>
                     </td>
                     <td>
@@ -319,7 +368,7 @@
                         <p>
                             Fecha de Nacimiento <span class="as">*</span>
                             <br>
-                            <input type="date" name="FNac2">
+                            <input type="date" name="FNac2" required>
                         </p>
                     </td>
                 </tr>
